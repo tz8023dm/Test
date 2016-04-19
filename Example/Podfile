@@ -1,0 +1,14 @@
+use_frameworks!
+
+target 'MDTest_Example', :exclusive => true do
+  pod 'MDTest', :path => '../'
+end
+
+target 'MDTest_Tests', :exclusive => true do
+  pod 'MDTest', :path => '../'
+
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'FBSnapshotTestCase'
+  pod 'Expecta+Snapshots'
+end
